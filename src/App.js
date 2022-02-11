@@ -6,23 +6,30 @@ import {
 import NavHead from './Pages/Shared/NavHead/NavHead'
 import Footer from './Pages/Shared/Footer/Footer'
 import Home from './Pages/Home/Home/Home'
+import Login from './Pages/Login/Login/Login'
+import AuthProvider from "./contexts/AuthProvider/AuthProvider";
+import Register from "./Pages/Login/Register/Register";
 
 function App() {
   return (
-    <Router>
-      <NavHead></NavHead>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        {/* <Route path="/clientLogin" element={<Login />} />
+    <AuthProvider>
+      <Router>
+        <NavHead></NavHead>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          {/* <Route path="/clientLogin" element={<Login />} />
             <Route path="/addFoods" element={<AddFoods />} />
             <Route path="/clientDashboard" element={<PrivateRoute> <ClientDashboard /> </PrivateRoute>} />
             <Route path="/confirmOrder" element={<ConfirmOrder />} />
             <Route path={`/placeOrder/:id`} element={<PrivateRoute> <PlaceOrder /> </PrivateRoute>} />
             <Route path="*" element={<NotFound />} /> */}
-      </Routes>
-      <Footer></Footer>
-    </Router>
+        </Routes>
+        <Footer></Footer>
+      </Router>
+    </AuthProvider>
   );
 }
 

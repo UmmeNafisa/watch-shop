@@ -57,6 +57,9 @@ const NavHead = () => {
                     <Link to="/faq" className={classes.link}>
                         FAQ
                     </Link>
+                    <Link to="/login" className={classes.link}>
+                        Login
+                    </Link>
                 </div>
             </Toolbar>
         </AppBar>
