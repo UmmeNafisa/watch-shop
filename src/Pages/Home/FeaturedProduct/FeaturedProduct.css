@@ -1,0 +1,13 @@
+.feature-collection{
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Solway', serif;
+}
+.feature{
+    color: #cbba9c;
+}
+.feature-product{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 900;
+}

@@ -1,0 +1,98 @@
+.banner-bg{
+    background-image: url('../../../Images/slider1.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+.banner-box{
+    padding-left: 50px;
+    padding-top: 30px;
+}
+.date-time{
+    font-family: 'Cormorant Garamond', serif;
+    color: #CBBA9C; 
+    font-size: 55px;   
+    width: 20%;
+}
+.empire{
+    color: #c5af89;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.banner-header{
+    color: #CBBA9C; 
+    margin: 0 0;
+    font-size: 55px;   
+}
+.des-p{
+    color: #c5af89;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 20px;
+    width: 40%;
+
+}
+.header-font{
+    font-family: 'Playfair Display', serif;
+}
+
+/* button */
+#btn {
+    background: #222;
+    height: 50px;
+    width: 12%;
+    border: none;
+    border-radius: 10px;
+    color: #CBBA9C;
+    font-size: 25px;
+    font-family: 'Cormorant Upright', serif;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+  }
+  
+  #btn #circle {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }
+  
+  #btn:hover {
+    background: transparent;
+  }
+  
+  #btn:hover #circle {
+    height: 50px;
+    width: 150px;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #eee;
+  }
+
+/* 
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Cormorant SC', serif;
+font-family: 'Cormorant Upright', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Solway', serif; */
