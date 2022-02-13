@@ -55,7 +55,7 @@ const useFirebase = () => {
             .then((userCredential) => {
                 //back user to the destination 
                 const destination = location?.state?.from || '/';
-                // history.replace(destination);
+                history.replace(destination);
                 setAuthError('');
             })
             .catch((error) => {
@@ -73,7 +73,7 @@ const useFirebase = () => {
 
                 //user info updated to data base 
 
-                // saveUser(user.email, user.displayName, 'PUT')
+                saveUser(user.email, user.displayName, 'PUT')
 
                 const destination = location?.state?.from || '/';
                 // history.replace(destination);
@@ -100,12 +100,12 @@ const useFirebase = () => {
 
     // check the email  admin or not  
 
-    // useEffect(() => {
-    //     fetch(`https://fierce-hollows-12616.herokuapp.com/users/${user.email}`)
-    //         .then(res => res.json())
-    //         .then(data => setAdmin(data.admin))
+    useEffect(() => {
+        fetch(`https://boiling-reef-14892.herokuapp.com/${user.email}`)
+            .then(res => res.json())
+            .then(data => setAdmin(data.admin))
 
-    // }, [user.email])
+    }, [user.email])
 
 
     const logout = () => {
@@ -122,14 +122,14 @@ const useFirebase = () => {
 
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
-        // fetch('https://fierce-hollows-12616.herokuapp.com/users', {
-        //     method: method,
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(user)
-        // })
-        //     .then()
+        fetch('https://boiling-reef-14892.herokuapp.com/', {
+            method: method,
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then()
     }
 
     return {
