@@ -28,12 +28,12 @@ const Register = () => {
         <>
 
             <div className="login-bg">
-                <div className="w-75 mx-auto py-5">
-                    <h1 className="section-header fw-bold stylish-front my-5 header-bg w-75 py-2 text-center mx-auto"> Register </h1>
+                <div className="login-box">
+                    <h1 className="header-bg  "> Register </h1>
                     <div>
                         <form onSubmit={handleLoginSubmit}>
                             <input {...register("name", { required: true })}
-                                className="m-2 w-50"
+                                className="form-box"
                                 placeholder="Your Name"
                                 required
                                 name="name"
@@ -42,7 +42,7 @@ const Register = () => {
                             <br />
 
                             <input {...register("email", { required: true })}
-                                className="m-2 w-50"
+                                className="form-box"
                                 placeholder=" Email"
                                 required
                                 name="email"
@@ -52,7 +52,7 @@ const Register = () => {
                             <br />
 
                             <input {...register("password", { required: true })}
-                                className="m-2 w-50"
+                                className="form-box"
                                 placeholder="Password"
                                 required
                                 type="password"
@@ -62,7 +62,7 @@ const Register = () => {
                             <br />
 
                             <input {...register("rePassword", { required: true })}
-                                className="m-2 w-50"
+                                className="form-box"
                                 placeholder="Re-enter Password"
                                 required
                                 type="password"
@@ -70,11 +70,11 @@ const Register = () => {
                                 onBlur={handleOnBlur} />
                             {errors.rePassword && "Re-enter Password is required"}
                             <br />
-                            <input {...register("phone", { required: true })} className="m-2 w-50" placeholder="Contact" required />
+                            <input {...register("phone", { required: true })} className="form-box" placeholder="Contact" required />
                             {errors.phone && "Phone Number is required"}
                             <br />
 
-                            <button type="submit" className="btn-all border-0 " >Register Now</button>
+                            <button type="submit" className="google-sign-in-btn " >Register Now</button>
 
                             {/* {isLoading && <Spinner animation="grow" variant="primary" />}
                             {user?.email && <Alert variant='success'>Welcome, Your registration is successfully done!</Alert>}

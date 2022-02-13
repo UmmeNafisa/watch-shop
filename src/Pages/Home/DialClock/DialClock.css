@@ -1,0 +1,11 @@
+.dial-clock-container{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.dial-header{
+    padding-bottom: 50px;
+}
+.dials{
+    padding: 0 40px;
+    cursor: pointer;
+}

@@ -33,22 +33,21 @@ const Login = () => {
     }
     return (
         <>
-
             <div className="login-bg">
-                <div className="w-75 mx-auto py-5">
+                <div className="login-box">
                     <div className="container">
-                        <h1 className="section-header fw-bold stylish-front header-bg w-50 py-2 text-center mx-auto"> Login </h1>
+                        <h1 className="header-bg"> Login </h1>
                         <form onSubmit={handleLoginSubmit}>
-                            <input {...register("email", { required: true })}
-                                className="m-2 w-50"
+                            <input  {...register("email", { required: true })}
+                                className="form-box"
                                 placeholder=" Email"
                                 required
                                 name="email"
                                 onChange={handleOnChange} />
                             {errors.email?.type === 'required' && "Your email is required"}
                             <br />
-                            <input {...register("password", { required: true })}
-                                className="m-2 w-50"
+                            <input  {...register("password", { required: true })}
+                                className="form-box"
                                 placeholder="Password"
                                 required
                                 type="password"
@@ -57,15 +56,15 @@ const Login = () => {
                             {errors.password && "Password is required"}
                             <br />
 
-                            <button className="btn-all border-0 mt-3" type="submit" >Login</button>
+                            <button className="btn-all" type="submit" >Login</button>
 
                             {/* {isLoading && <Spinner animation="grow" variant="primary" />}
                             {user?.email && <Alert variant='success'>Login successfully!</Alert>}
                             {authError && <Alert variant='danger'>{authError}</Alert>} */}
                         </form>
-                        <p> New User ? Create a new Account <Link to="/register">Register</Link> </p>
-                        <p>------------ or ------------</p>
-                        <button className="btn-all border-0 mb-5" onClick={handleGoogleSignIn} >Google Sign In</button>
+                        <p className='new-user'> New User ? Create a new Account <Link to="/register" className="register">Register</Link> </p>
+                        <p className='new-user'> --------------------------- or ---------------------------</p>
+                        <button className="google-sign-in-btn" onClick={handleGoogleSignIn} >Google Sign In</button>
                     </div>
                 </div>
             </div>

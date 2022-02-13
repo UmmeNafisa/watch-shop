@@ -1,13 +1,51 @@
 .login-bg{
-    background-image: url("https://image.freepik.com/free-photo/colorful-composition-kid-puzzle_23-2147689860.jpg");
+    background-image: url('../../../Images/paul-cuoco-CO2vOhPqlrM-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
    background-position: center;
-   height: auto;
-   max-height: 100vh ;
+   height: 100vh ;
 }
-
+.login-box{
+    width: 50%;
+   padding-left: 60px;
+   
+}
 .header-bg{
     color: white;
-    background-image: linear-gradient(rgba(241, 229, 60, 0.905),rgb(72, 168, 197));
+   margin-top: 0;
+   padding-top: 100px;
+   font-size: 35px;
+   font-family: 'Solway', serif;
+  padding-left: 100px;
+}
+.form-box{
+ width: 50%;
+ padding: 10px;
+ margin-bottom: 10px;
+ border-radius: 10px;
+}
+.new-user{
+    color: #CBBA9C;
+  
+}
+.register{
+    color: aliceblue;
+}
+.btn-all{
+    color: white;
+    background-color: #CBBA9C;
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-weight: 700;
+    margin-left: 90px;
+}
+.google-sign-in-btn{
+    color: white;
+    background-color: #CBBA9C;
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-weight: 700;
+    margin-left: 50px;
 }
