@@ -14,14 +14,14 @@ const Footer = () => {
     return (
         <Container>
             <Box sx={{ width: '100%' }}>
-                <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                    <Grid item xs={3}>
+                <Grid container spacing={1} >
+                    <Grid item xs={12} sm={6} md={3}>
                         <h2 className="footer-header "> CONTACT US</h2>
                         <p><FontAwesomeIcon icon={faHouse} /> 520,West valey, Anim ad minim,</p>
                         <p><FontAwesomeIcon icon={faPhone} /> +91 1234567890 </p>
                         <p><FontAwesomeIcon icon={faEnvelope} /> info@weightswatch.com  </p>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={12} sm={6} md={3}>
                         <h2 className="footer-header "> SHARE WITH US</h2>
                         <p>Special offers on social networks</p>
                         <div><FontAwesomeIcon icon={faFacebookF} className="social-icon" size="1x" />
@@ -29,7 +29,7 @@ const Footer = () => {
                             <FontAwesomeIcon icon={faTwitter} className="social-icon" size="1x" />
                             <FontAwesomeIcon icon={faTumblr} className="social-icon" size="1x" />  </div>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={12} sm={6} md={3}>
                         <h2 className="footer-header "> NEWSLETTER</h2>
                         <p>Subscribe our newsletter</p>
                         <FormControl>
@@ -37,21 +37,18 @@ const Footer = () => {
                             <Input id="my-input" aria-describedby="my-helper-text" />
                         </FormControl>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={12} sm={6} md={3}>
                         <h2 className="footer-header "> #INSTAGRAM</h2>
                         <p>Our instagram gallery</p>
                         <Box sx={{ flexGrow: 1 }}>
-                            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                                <Grid item xs={2} sm={4} md={4}>
-                                    <img src={instaPic1} alt="" />
-                                </Grid>
-                                <Grid item xs={2} sm={4} md={4}>
+                            <Grid container spacing={1} >
+                                <Grid item xs={2} sm={4} md={3}>
                                     <img src={instaPic2} alt="" />
                                 </Grid>
-                                <Grid item xs={2} sm={4} md={4}>
+                                <Grid item xs={2} sm={4} md={3}>
                                     <img src={instaPic3} alt="" />
                                 </Grid>
-                                <Grid item xs={2} sm={4} md={4}>
+                                <Grid item xs={2} sm={4} md={3}>
                                     <img src={instaPic4} alt="" />
                                 </Grid>
 
